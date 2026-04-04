@@ -1,0 +1,102 @@
+
+/* PSEUDO ELEMENT (2 tane çift nokta kullanılır.)*/
+
+    p::first-line{
+        color: brown;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+
+    p.about::first-line{
+        color: green;
+    }
+
+    p::first-letter{
+        font-size: 30px;
+    }
+
+    /*
+    P::before{
+        content:"Başlangıç:";
+        display: block;
+        background-color: aqua;
+    }
+    */
+
+    p::after{
+        content:"--PARAGRAF SONU--";
+        display: block;
+        background-color:bisque;
+        padding: 5px;
+    }
+
+
+
+/* PSEUDO CLASS(1 tane çift nokta kullanılır.)*/
+
+    ul li{
+        padding: 10px;
+        margin-bottom: 10px;
+        list-style: none;
+    }
+
+
+    ul li:first-child{
+        background-color: gold;
+    }
+
+    ul li:last-child{
+    background-color: gold;
+    }
+
+    ul li:nth-of-type(even){
+        border: 2px solid red;
+    }
+    
+    ul li:nth-of-type(odd){
+        border: 2px solid blue;
+    }
+
+    a{
+        padding: 5px 8px;
+        text-decoration: none;
+        display: block;
+        width: 80px;
+        border: 1px solid gray;
+        margin-bottom: 10px;
+    }
+
+
+    a:link{
+        color: red;
+    }
+
+
+    a:visited{
+        color:blue;
+    }
+    
+
+    a:hover{
+        color: white;
+        background-color: gray;
+    }
+
+
+    a:active{
+        color: green;
+        background-color: gold;
+    }
+
+    span{
+        display: none;
+        background-color: blueviolet;
+        padding: 2px;
+    }
+
+    div:hover span{     /* burdaki "div:hover span" ifadesinin anlamı= div üzerine gelince span etiketinde meydana gelecek değişiklik*/
+        display: block;
+    }
+
+    

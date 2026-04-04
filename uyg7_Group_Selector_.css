@@ -1,0 +1,91 @@
+
+/*       GROUP SELECTORS
+
+1: (*)       => Tüm etiketler    
+2: (p)       => Tüm paragraflar
+3: (div p)   => Div içindeki tüm paragraf etiketleri
+4: (div,p)   => Tüm div ve paragraf etiketleri
+5: (div>p)   => Bir üst etiketi div olan tüm paragraflar
+6: (p ~ div) => p ile aynı seviyedeki tüm div etiketleri
+7: (p + div) => p etiketleriinden sonra gelen ilk div etiketleri
+*/
+
+
+/*
+* {
+    border: 1px solid blue;
+}
+*/
+
+
+
+/*
+p{
+    border: 1px solid red;
+}
+*/
+
+
+
+/*
+div p{
+    border: 1px solid yellowgreen;
+}
+*/
+
+
+
+/*
+.container div{
+    border: 1px solid gray;
+}
+*/
+
+
+
+/*
+.container div p{
+    border: 1px solid sandybrown;
+}
+*/
+
+
+
+/*
+div,p{
+    border: 1px solid  blueviolet;
+}
+*/
+
+
+
+/*
+div.box,p{
+    border: 1px solid green;
+}
+*/
+
+
+
+/*
+div>p{
+    border: 1px solid chocolate;
+}
+*/
+
+
+
+/*
+p~div{
+    border: 1px solid green;
+}
+*/
+
+
+
+/*
+p+div{
+    border: 1px solid tomato;
+}
+*/
+

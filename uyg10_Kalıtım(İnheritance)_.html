@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kalıtım(İnheritance)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body{
+            color: brown;
+        }
+
+        ul{
+            color: gold;
+        }
+
+        li{
+            color: yellowgreen;
+        }
+
+        .orange{
+            color: orange !important;   /*important sayesinde class'ın rengini en baskın yaptık.*/
+        }
+
+        #passive{
+            color: gray;
+        }
+
+        a{
+            color: inherit;       /*inherit sayesinde bir üst katmandaki etiketten yani li etiketinden color kalıtımı yaptık.*/
+        }
+
+        span{
+            color: red;
+            border: 1px solid green;
+        }
+
+        #degistirelim span{    /*inherit sayesinde span etiketinin içindeki kelimelerin rengini div etiketinden kalıtım ettik*/
+            color: inherit;
+            }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Komple Uygulamalı Web Geliştirme</h1>
+
+    <ul>
+        <li id="passive" class="orange">Html 5</li>
+
+        <li>Css</li>
+
+        <li class="orange">JavaScript</li>
+
+        <li>
+            <a href="#">Jquery</a>
+        </li>
+
+    </ul>
+
+    <div id="degistirelim" style="color: aqua;">
+        Lorem ipsum dolor <span>sit amet consectetur</span> adipisicing elit.
+       
+    </div>
+
+    <div style="color: green;">
+        Lorem ipsum dolor <span>sit amet consectetur</span> adipisicing elit.
+    </div>
+
+    <div>
+        Lorem ipsum dolor <span>sit amet consectetur</span> adipisicing elit.
+    </div>
+    
+</body>
+</html>
