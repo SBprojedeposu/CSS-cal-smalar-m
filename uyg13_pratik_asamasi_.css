@@ -1,0 +1,55 @@
+h2{
+    color: cornflowerblue;
+}
+
+#org-chart li~li{
+    color: gray;
+    opacity: 0.6;
+}
+
+#sınıf2 li:first-child{
+    color: red;
+}
+
+#sınıf2 li:last-child{
+    color: brown;
+}
+
+#sınıf2 li:hover{
+    color: dimgrey;
+}
+
+#form_1 label:not([for="checkbox_1"]), #form_1 input:not([type="checkbox"]){
+    display: block;
+}
+
+#form_1 input[type="password"]:focus{
+   border: 4px solid black;
+}
+
+/*
+#form_1 input[type="checkbox"]:checked + label{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: gray;
+}*/
+
+#form_1 div:has(input:checked) label{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: grey;
+}
+
+input[type="button"]:active{
+    color: whitesmoke;  
+    background-color: gray;
+    border-radius: 5px;
+}
+
+span{
+    display: none;
+}
+
+.secure-area:hover span{
+    display: block;
+    color: brown;
+    opacity: 0.3;
+}

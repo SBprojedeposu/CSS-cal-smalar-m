@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Floating Divs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="uyg18_Floating_Divs_.css">
+
+    <style>
+
+
+        #container{
+            background-color: gray;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            margin: 2px;
+        }
+
+        #first{
+            background-color: red;
+            float: right;
+        }
+
+        #second{
+            background-color: blue;
+            float: right;
+        }
+
+        #third{
+            background-color: green;
+            float: right;
+        }
+        
+        /*
+        .clear{
+            overflow: auto;
+        }
+        */
+
+        .clear::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+
+        p::before{
+            content: "----GİRİŞ----";
+        }
+
+        
+        p::after{
+            content: "--DENEME--";
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="container" class="clear">
+        <div id="first" class="box"></div>
+        <div id="second" class="box"></div>
+        <div id="third" class="box"></div>
+    </div>
+
+    <p>
+        Lorem, ipsum dolor.
+    </p>
+    
+
+</body>
+</html>
