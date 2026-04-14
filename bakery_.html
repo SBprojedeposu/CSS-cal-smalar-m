@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Bakery</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bakery_.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <div id="sol_bar">
+        <h1 class="logo">
+          <i class="fa-solid fa-bread-slice" style="color: rgb(0, 0, 0)"></i>
+          BAKERY
+        </h1>
+        <ul class="menu">
+          <li>
+            <i class="fa-solid fa-house" style="color: rgb(4, 19, 31)"></i> Ana
+            Sayfa
+          </li>
+          <li>
+            <i class="fa-solid fa-cheese" style="color: rgb(4, 19, 31)"></i>
+            Ürünler
+          </li>
+          <li>
+            <i
+              class="fa-solid fa-basket-shopping"
+              style="color: rgb(4, 19, 31)"
+            ></i>
+            Siparişler
+          </li>
+          <li>
+            <i class="fa-solid fa-gear" style="color: rgb(4, 19, 31)"></i>
+            Ayarlar
+          </li>
+        </ul>
+      </div>
+      <div id="üst_bar">
+        <input type="text" placeholder="Ürün Ara " />
+        <div class="user-info">
+          <b
+            ><i class="fa-solid fa-door-open" style="color: rgb(0, 0, 0)"></i>
+            Hoş geldin, Fırın Ustası !</b
+          >
+        </div>
+      </div>
+      <div id="kutucuk1">
+        <span class="card-title"
+          >Kazanç
+          <i
+            class="fa-solid fa-dollar-sign fa-fade fa-2xl"
+            style="color: rgb(72, 236, 4)"
+          ></i
+        ></span>
+        <div class="card-value">1.250 TL</div>
+        <div class="card-status">+12% dünden beri</div>
+      </div>
+      <div id="kutucuk2">
+        <span class="card-title">Aktif Siparişler</span>
+        <div class="card-value">12 Adet</div>
+        <div class="card-status">+8% dünden beri</div>
+      </div>
+      <div id="kutucuk3">
+        <span class="card-title"
+          >Stoktakiler
+          <i
+            class="fa-solid fa-basket-shopping fa-bounce fa-xl"
+            style="color: rgb(116, 192, 252)"
+          ></i
+        ></span>
+        <div class="card-value" id="toplamstoksayisi">85 Çeşit</div>
+        <div class="card-status">+10% dünden beri</div>
+      </div>
+      <div id="kutucuk4">
+        <span class="card-title"
+          >Ürün İptali<i
+            class="fa-regular fa-circle-xmark fa-fade fa-2xl"
+            style="color: rgb(236, 4, 4)"
+          ></i
+        ></span>
+        <div class="card-value">2 Adet</div>
+        <div class="card-status2">-50% dünden beri</div>
+      </div>
+      <div id="yazisablon">
+        <h3>Günün Notları</h3>
+        <ul class="notlar-listesi">
+          <li>Saat 14.00 - Tam buğday ekmekleri fırından çıkacak.</li>
+          <li>Yarın sabah için 10 koli yumurta siparişi verilecek.</li>
+          <li>Akşam kapanışta zemin derin temizliği yapılacak.</li>
+        </ul>
+      </div>
+      <div id="recent_orders">
+        <h3 class="table-title">Son Siparişler</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Müşteri</th>
+              <th>Ürün</th>
+              <th>Tutar</th>
+              <th>Durum</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ayşe Yılmaz</td>
+              <td>Simit (x10)</td>
+              <td>150 TL</td>
+              <td><span class="status-done">Teslim Edildi</span></td>
+            </tr>
+            <tr>
+              <td>Mehmet Can</td>
+              <td>Kruvasan (x4)</td>
+              <td>240 TL</td>
+              <td><span class="status-waiting">Hazırlanıyor</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="alt_kutucuk1" class="alt_sinif">
+        <h2>
+          Favori Ürünümüz Hakkında
+          <i
+            class="fa-solid fa-heart fa-beat-fade fa-xl"
+            style="color: rgb(255, 0, 0)"
+          ></i>
+        </h2>
+        <p id="favoriürün">
+          Kruvasan, Fransız mutfağının simgesi sayılan, tereyağlı ve kat kat
+          (laminasyon) yapısıyla bilinen, ay şeklinde çıtır bir hamur işidir.
+        </p>
+        <img
+          id="favori_görsel"
+          src="pngtree-transparent-bakery-items-png-image_13322632.png"
+          alt=""
+        />
+      </div>
+      <div id="alt_kutucuk2" class="alt_sinif">
+        <h3>Haftalık Kampanya</h3>
+        <p>
+          <span id="span1">Simit alana çay bedava!</span>
+          <br />
+          <span id="span2"
+            >Bu kampanya ile müşteri trafiği
+            <strong
+              >%20 arttı.<i
+                class="fa-solid fa-angles-up fa-bounce fa-2xl"
+                style="color: rgb(99, 230, 190)"
+              ></i></strong
+          ></span>
+        </p>
+        <img id="musteri_memnun" src="crm-musteri-hizmetleri.png" alt="" />
+      </div>
+      <div id="alt_kutucuk3" class="alt_sinif">
+        <h3>Hızlı İşlemler</h3>
+        <ul>
+          <li>
+            Stok Ekle
+            <i class="fa-solid fa-plus fa-sm" style="color: rgb(0, 0, 0)"></i>
+          </li>
+          <li>
+            Kasa Kapat
+            <i
+              class="fa-solid fa-sack-xmark fa-sm"
+              style="color: rgb(0, 0, 0)"
+            ></i>
+          </li>
+          <li>
+            Tedarikçi Ara
+            <i class="fa-solid fa-phone fa-sm" style="color: rgb(0, 0, 0)"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="stokModal" class="modal-arkaplan">
+      <div class="modal-icerik">
+        <div class="modal-hader">
+          <h3>Yeni Ürün / Stok Ekle</h3>
+          <span class="kapat-butonu">&times;</span>
+        </div>
+        <div class="modal-body">
+          <input
+            type="text"
+            id="inputUrunAdi"
+            placeholder="Ürün Adı(örn: Tam Buğday Ekmeği)"
+            autocomplete="off"
+          />
+          <input
+            type="number"
+            id="inputStokAdedi"
+            placeholder="Stok Adedi"
+            autocomplete="off"
+          />
+          <button class="kaydet-btn" id="stokkaydetbtn">Sisteme İşle</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const modal = document.getElementById("stokModal");
+      const stokEkleBtn = document
+        .getElementById("alt_kutucuk3")
+        .getElementsByTagName("li")[0];
+      const kapatButonu = document.querySelector(".kapat-butonu");
+      const kaydetBtn = document.getElementById("stokkaydetbtn");
+      const kaydedilenStok = localStorage.getItem("firinStokSayisi");
+      if (kaydedilenStok) {
+        document.getElementById("toplamstoksayisi").innerText =
+          kaydedilenStok + "Çeşit";
+      }
+
+      stokEkleBtn.onclick = function () {
+        modal.style.display = "flex";
+      };
+
+      if (kapatButonu) {
+        kapatButonu.onclick = function () {
+          modal.style.display = "none";
+        };
+      }
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+
+      kaydetBtn.onclick = function () {
+        const urunAdi = document.getElementById("inputUrunAdi").value;
+        const urunAdedi = document.getElementById("inputStokAdedi").value;
+        const gosterge = document.getElementById("toplamstoksayisi");
+
+        if (urunAdi !== "" && urunAdedi !== "") {
+          let mevcutSayi = parseInt(gosterge.innerText);
+          gosterge.innerText = mevcutSayi + 1 + "Çeşit";
+
+          let yeniSayi = mevcutSayi + 1;
+          gosterge.innerText = yeniSayi + "Çeşit";
+          localStorage.setItem("firinStokSayisi", yeniSayi);
+
+          alert("Başarılı! " + urunAdi + " listeye eklendi.");
+
+          modal.style.display = "none";
+          document.getElementById("inputUrunAdi").value = "";
+          document.getElementById("inputStokAdedi").value = "";
+        } else {
+          alert("Ürün adı ve adedini doldurman lazım !");
+        }
+      };
+    </script>
+  </body>
+</html>
